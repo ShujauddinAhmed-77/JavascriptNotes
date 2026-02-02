@@ -1,0 +1,129 @@
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+.red{
+    color:#ff0000;
+}
+
+.yellowBg{
+    background-color: #ffff00;
+}
+.green{
+    color:#00ff00;
+}
+.underline{
+    text-decoration:underline;
+}
+.blueborder{
+    border:2px solid #0000ff;
+}
+body{
+    font-family:"Segoe UI",'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size : 3.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 2rem;
+    margin-top:40px;
+    margin-bottom: 20px;
+    color:#ffeb3b;
+}
+#mainImg{
+    display: block;
+    width:100%;
+    max-width:800px;
+    height:400px;
+    object-fit:cover;
+    margin:0 auto 40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    border: 4px solid #ffd700;
+}
+p{
+    font-size: 1.1rem;
+    margin-bottom:20px;
+    text-align: justify;
+    background: rgba(255,255,255,0.1);
+    padding: 20px;
+    border-radius:  10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.box ul {
+    margin-left: 30px;
+    margin-top:15px;
+}
+.box li{
+    margin-bottom:10px;
+    line-height:1.6;    
+    font-size:1.1rem;
+}
+.boxLink{
+    color:#1e90ff;
+    text-decoration:none;
+    font-weight:600;
+}
+.boxLink:hover{
+    color: #6464ff;
+    text-decoration:underline;
+}
+#description{
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    backdrop-filter: blur(15px);
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.oldImg{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s ease;
+}
+.oldImg:hover{
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+}
+.footer{
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 -4px 20px rgba(0,0,0,0.3);
+}
+@media (max-width: 600px) {
+    h1{
+        font-size : 2.5rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    .images{
+        height: 250px;
+    }
+    .oldImg{
+        width: 100%;
+        height: auto;
+    }
+}
